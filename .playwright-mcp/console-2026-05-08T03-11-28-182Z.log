@@ -1,0 +1,7 @@
+[ 1247084ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3030/slides.md__slidev_17.md?import&t=1778211134834:0
+[ 1247086ms] [ERROR] [vite] Failed to reload /slides.md__slidev_17.md. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:3030/@vite/client:808
+[ 1250259ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3030/slides.md__slidev_17.md?import&t=1778211135394:0
+[ 1250259ms] [ERROR] slide failed to load TypeError: Failed to fetch dynamically imported module: http://localhost:3030/@slidev/slides/17/md?t=1778211135394 @ http://localhost:3030/@slidev/slides?t=1778211135394:94
+[ 1250276ms] [ERROR] slide failed to load TypeError: Failed to fetch dynamically imported module: http://localhost:3030/@slidev/slides/17/md?t=1778211135394 @ http://localhost:3030/@slidev/slides?t=1778211135394:94
+[ 1252887ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3030/slides.md__slidev_19.md?import&t=1778211141009:0
+[ 1252888ms] [ERROR] [vite] Failed to reload /slides.md__slidev_19.md. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:3030/@vite/client:808

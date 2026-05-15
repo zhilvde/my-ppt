@@ -1,0 +1,48 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e9]:
+          - heading "第一部分" [level=1] [ref=e10]
+          - heading "环境准备与依赖安装" [level=2] [ref=e11]
+        - generic [ref=e15]: Loading slide...
+      - img
+    - navigation [ref=e17]:
+      - generic [ref=e18]:
+        - button "Enter fullscreen" [ref=e19] [cursor=pointer]:
+          - generic [ref=e20]: Enter fullscreen
+        - button "Go to previous slide" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: Go to previous slide
+        - button "Go to next slide" [ref=e25] [cursor=pointer]:
+          - generic [ref=e26]: Go to next slide
+        - button "Show slide overview" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: Show slide overview
+        - button "Switch to dark mode theme" [ref=e31] [cursor=pointer]:
+          - generic [ref=e32]: Switch to dark mode theme
+          - img [ref=e33]
+        - button "Toggle camera view" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: Toggle camera view
+        - button "Record video" [ref=e39] [cursor=pointer]:
+          - generic [ref=e40]: Record video
+        - button "Select recording device" [ref=e43] [cursor=pointer]:
+          - button "Select recording device" [ref=e44]:
+            - generic [ref=e45]: Select recording device
+        - button "Show drawing toolbar" [ref=e48] [cursor=pointer]:
+          - generic [ref=e49]: Show drawing toolbar
+        - button "Presenter Mode" [ref=e52] [cursor=pointer]:
+          - generic [ref=e53]: Presenter Mode
+        - button "Show editor" [ref=e55] [cursor=pointer]:
+          - generic [ref=e56]: Show editor
+        - link "Browser Exporter" [ref=e58] [cursor=pointer]:
+          - /url: /export
+          - generic [ref=e59]: Browser Exporter
+        - button "Show info" [ref=e61] [cursor=pointer]:
+          - generic [ref=e62]: Show info
+        - button "Change sync settings" [ref=e66] [cursor=pointer]:
+          - button "Change sync settings" [ref=e67]:
+            - generic [ref=e68]: Change sync settings
+        - button "More Options" [ref=e72] [cursor=pointer]:
+          - button "More Options" [ref=e73]:
+            - generic [ref=e74]: More Options
+        - generic [ref=e77]: 4 / 28
+  - textbox "Goto..." [disabled] [ref=e80]

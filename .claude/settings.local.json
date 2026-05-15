@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /d D:\\\\agent\\\\ppt\\\\my-ppt)",
+      "Bash(npx slidev *)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_run_code_unsafe",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_tabs",
+      "mcp__xiaohongshu_mcp-2__login",
+      "mcp__xiaohongshu_mcp-2__search_notes",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3030/)"
+    ]
+  }
+}
