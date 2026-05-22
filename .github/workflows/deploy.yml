@@ -9,14 +9,17 @@ permissions:
   pages: write
   id-token: write
 
+# 👇 这里是关键！必须加环境！
+environment:
+  name: github-pages
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js + pnpm
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -30,7 +33,7 @@ jobs:
       - name: Build Slidev
         run: pnpm run build -- --base=/my-ppt/
 
-      - name: Upload static files
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           name: slidev-build
