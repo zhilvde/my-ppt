@@ -1,5 +1,4 @@
-name: Deploy Slidev to GitHub Pages
-
+name: Deploy Slidev
 on:
   push:
     branches: [ zhilvde/patch-63513 ]
@@ -9,17 +8,15 @@ permissions:
   pages: write
   id-token: write
 
-# 👇 这里是关键！必须加环境！
-environment:
-  name: github-pages
-
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -30,16 +27,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build Slidev
-        run: pnpm run build -- --base=/my-ppt/
+      - name: Build
+        run: pnpm run build --base=/my-ppt/
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          name: slidev-build
-          path: ./dist
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
-        with:
-          artifact_name: slidev-build
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
