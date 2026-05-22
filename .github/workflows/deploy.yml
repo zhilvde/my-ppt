@@ -16,19 +16,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node.js + pnpm
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+
+      - name: Install pnpm
+        run: npm install -g pnpm
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Build Slidev
-        run: npm run build -- --base=/my-ppt/
+        run: pnpm run build -- --base=/my-ppt/
 
-      # 只上传一次，并且自定义 artifact 名字，避免冲突
       - name: Upload static files
         uses: actions/upload-pages-artifact@v3
         with:
